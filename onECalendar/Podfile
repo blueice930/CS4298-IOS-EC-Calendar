@@ -4,5 +4,4 @@ target 'onECalendar' do
   use_frameworks!
   pod 'SwiftyOnboard'
   pod 'ADDatePicker'
-  pod 'JTAppleCalendar', '~> 7.0'
 end

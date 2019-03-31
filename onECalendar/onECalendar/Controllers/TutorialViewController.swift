@@ -12,27 +12,29 @@ import SwiftOverlayShims
 
 class TutorialViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
-    let colors:[UIColor] = [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.8053434491, green: 0.3954387307, blue: 0.3358164728, alpha: 1),#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1),#colorLiteral(red: 0.4444106817, green: 0.7408292294, blue: 0.4954127669, alpha: 1)]
+    let colors:[UIColor] = [#colorLiteral(red: 0.3334529996, green: 0.3025326729, blue: 0.6009013057, alpha: 1),#colorLiteral(red: 0.7112176418, green: 0.7128540874, blue: 0.3770347238, alpha: 1),#colorLiteral(red: 0.5006242394, green: 0.1592580974, blue: 0.2713294625, alpha: 1),#colorLiteral(red: 0.4444106817, green: 0.7408292294, blue: 0.4954127669, alpha: 1)]
+
     var titleArray: [String] =
         [
             "Welcome to onECalendar!",
             
-            "What is the EC-Calendar?",
+            "How does EC-Calendar work?",
             
-            "What is the EC-Calendar?",
+            "Why do we do this?",
             
-            "What is onECalendar?"
+            "Easy & Convenient"
     ]
     
+    //A calendar system with Easier week system and Compatibly uses same month system of the current Gregorian calendar.\n
     var subTitleArray: [String] =
         [
-            "The EC Calendar is a perennial calendar system with an easier and more practical week and month system",
+            "ONE Same Calendar For Every Year",
             
-            "It has 52 consistent weeks per year \nEvery year starts on a Monday and ends on a Sunday\nFebruary always has 29 days",
+            "- Start with Monday and ends with Sunday Every Year -\n- 29 days in February -\n- Annual Extra Saturday on the Dec 1st -\n- Leap day -> Aug 31st -> Extra Saturday",
             
-            "An extra Saturday is added on the 1st of December every year\nAnother extra Saturday on the 31st of August every leap year!",
+            "Easier week display and Compatibly uses the same month system.\nMake More Sense!",
             
-            "Pros\t\t\tCons\nNo need for new calendars every year\tDifficult to make the transition\nAll quarters are equal and consistent\nSet dates for festivals and events like Easter\n\nWe’re here to make that transition easier for you!"
+            "Try EC-Calendar and check the difference"
             
     ]
     
@@ -67,19 +69,16 @@ class TutorialViewController: UIViewController {
     }
     
     @objc func handleSkip() {
-        swiftyOnboard?.goToPage(index: 2, animated: true)
+        performSegue(withIdentifier: "calendarView", sender: self)
     }
     
     @objc func handleContinue(sender: UIButton) {
         let index = sender.tag
         swiftyOnboard?.goToPage(index: index + 1, animated: true)
-        print("continue")
     }
     
     @objc func handleTutDone(sender: UIButton) {
-//        let next:OldCalendarViewController = OldCalendarViewController()
-//        self.present(next, animated: true, completion: nil)
-        print("start")
+        performSegue(withIdentifier: "calendarView", sender: self)
     }
 }
 
@@ -96,7 +95,7 @@ extension TutorialViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource
         
         //Set the font and color for the labels:
         view.title.font = UIFont(name: "futura-Bold", size: 36)
-        view.title.textColor = UIColor.red
+        
         view.subTitle.font = UIFont(name: "futura", size: 22)
         view.subTitle.textAlignment = .center
         view.subTitle.numberOfLines = 20
@@ -114,10 +113,13 @@ extension TutorialViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource
         
         //Setup targets for the buttons on the overlay view:
         overlay.skipButton.addTarget(self, action: #selector(handleSkip), for: .touchUpInside)
+        
         overlay.continueButton.addTarget(self, action: #selector(handleContinue), for: .touchUpInside)
+        overlay.continueButton.setBackgroundImage(UIImage(named: "buttonOff")!, for: .normal)
+        overlay.continueButton.setBackgroundImage(UIImage(named: "buttonOn")!, for: .highlighted)
         
         //Setup for the overlay buttons:
-        overlay.continueButton.titleLabel?.font = UIFont(name: "futura-Bold", size: 40)
+        overlay.continueButton.titleLabel?.font = UIFont(name: "futura-Bold", size: 36)
         
         overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
         overlay.skipButton.setTitleColor(UIColor.white, for: .normal)
@@ -145,9 +147,7 @@ extension TutorialViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource
     }
     
     func swiftyOnboardBackgroundColorFor(_ swiftyOnboard: SwiftyOnboard, atIndex index: Int) -> UIColor?{
-         return colors[index]
+            return colors[index]
     }
-    
-    
 
 }

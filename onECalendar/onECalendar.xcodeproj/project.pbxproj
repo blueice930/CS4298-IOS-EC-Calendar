@@ -12,14 +12,15 @@
 		A70BCCA22250816E0004AF6B /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BCC9F2250816E0004AF6B /* MonthView.swift */; };
 		A70BCCA32250816E0004AF6B /* WeekdaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BCCA02250816E0004AF6B /* WeekdaysView.swift */; };
 		A70BCCA42250816E0004AF6B /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BCCA12250816E0004AF6B /* CalenderView.swift */; };
+		A70BCCB22250D4620004AF6B /* Theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70BCCB12250D4620004AF6B /* Theme.xcassets */; };
+		A70BCCB4225159470004AF6B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BCCB3225159470004AF6B /* SettingsViewController.swift */; };
+		A70BCCB6225159510004AF6B /* selectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70BCCB5225159510004AF6B /* selectViewController.swift */; };
 		A70DEA11224FD96E00AA4731 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70DEA10224FD96E00AA4731 /* AppDelegate.swift */; };
 		A70DEA16224FD96E00AA4731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70DEA14224FD96E00AA4731 /* Main.storyboard */; };
 		A70DEA19224FD96E00AA4731 /* onECalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70DEA17224FD96E00AA4731 /* onECalendar.xcdatamodeld */; };
 		A70DEA1B224FD96F00AA4731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70DEA1A224FD96F00AA4731 /* Assets.xcassets */; };
 		A70DEA1E224FD96F00AA4731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70DEA1C224FD96F00AA4731 /* LaunchScreen.storyboard */; };
 		A70DEA35224FE42900AA4731 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70DEA34224FE42900AA4731 /* TutorialViewController.swift */; };
-		A70DEA4A22500E9200AA4731 /* OldCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70DEA4922500E9200AA4731 /* OldCalendarViewController.swift */; };
-		A73DEBF0225023C1005586A9 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73DEBEF225023C1005586A9 /* CalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		A70BCCA62250CA9A0004AF6B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		A70BCCA72250CAA10004AF6B /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
 		A70BCCA82250CAA10004AF6B /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A70BCCB12250D4620004AF6B /* Theme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Theme.xcassets; sourceTree = "<group>"; };
+		A70BCCB3225159470004AF6B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A70BCCB5225159510004AF6B /* selectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectViewController.swift; sourceTree = "<group>"; };
 		A70DEA0D224FD96E00AA4731 /* onECalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onECalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70DEA10224FD96E00AA4731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70DEA15224FD96E00AA4731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,8 +46,6 @@
 		A70DEA1D224FD96F00AA4731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A70DEA1F224FD96F00AA4731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A70DEA34224FE42900AA4731 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		A70DEA4922500E9200AA4731 /* OldCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldCalendarViewController.swift; sourceTree = "<group>"; };
-		A73DEBEF225023C1005586A9 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A70DEA10224FD96E00AA4731 /* AppDelegate.swift */,
 				A70DEA14224FD96E00AA4731 /* Main.storyboard */,
 				A70DEA1A224FD96F00AA4731 /* Assets.xcassets */,
+				A70BCCB12250D4620004AF6B /* Theme.xcassets */,
 				A70DEA1C224FD96F00AA4731 /* LaunchScreen.storyboard */,
 				A70DEA1F224FD96F00AA4731 /* Info.plist */,
 				A70DEA17224FD96E00AA4731 /* onECalendar.xcdatamodeld */,
@@ -122,7 +125,6 @@
 				A70BCCA12250816E0004AF6B /* CalenderView.swift */,
 				A70BCC9F2250816E0004AF6B /* MonthView.swift */,
 				A70BCCA02250816E0004AF6B /* WeekdaysView.swift */,
-				A73DEBEF225023C1005586A9 /* CalendarCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,8 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				A70DEA34224FE42900AA4731 /* TutorialViewController.swift */,
-				A70DEA4922500E9200AA4731 /* OldCalendarViewController.swift */,
 				A70BCC9D225081310004AF6B /* CalendarViewController.swift */,
+				A70BCCB3225159470004AF6B /* SettingsViewController.swift */,
+				A70BCCB5225159510004AF6B /* selectViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A70DEA1E224FD96F00AA4731 /* LaunchScreen.storyboard in Resources */,
+				A70BCCB22250D4620004AF6B /* Theme.xcassets in Resources */,
 				A70DEA1B224FD96F00AA4731 /* Assets.xcassets in Resources */,
 				A70DEA16224FD96E00AA4731 /* Main.storyboard in Resources */,
 			);
@@ -274,12 +278,12 @@
 				A70BCC9E225081310004AF6B /* CalendarViewController.swift in Sources */,
 				A70DEA11224FD96E00AA4731 /* AppDelegate.swift in Sources */,
 				A70BCCA42250816E0004AF6B /* CalenderView.swift in Sources */,
-				A70DEA4A22500E9200AA4731 /* OldCalendarViewController.swift in Sources */,
+				A70BCCB6225159510004AF6B /* selectViewController.swift in Sources */,
 				A70DEA35224FE42900AA4731 /* TutorialViewController.swift in Sources */,
 				A70DEA19224FD96E00AA4731 /* onECalendar.xcdatamodeld in Sources */,
 				A70BCCA32250816E0004AF6B /* WeekdaysView.swift in Sources */,
-				A73DEBF0225023C1005586A9 /* CalendarCell.swift in Sources */,
 				A70BCCA22250816E0004AF6B /* MonthView.swift in Sources */,
+				A70BCCB4225159470004AF6B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXPHUMH7W;
 				INFOPLIST_FILE = onECalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cityu.onECalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -451,7 +457,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXPHUMH7W;
 				INFOPLIST_FILE = onECalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cityu.onECalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
