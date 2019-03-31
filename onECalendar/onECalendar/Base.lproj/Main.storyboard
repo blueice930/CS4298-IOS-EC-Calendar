@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Obu-rO-age">
+    <device id="ipad11_0rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tutorial View Controller-->
+        <scene sceneID="vgQ-75-2nZ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Obu-rO-age" customClass="TutorialViewController" customModule="onECalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Vs-Z1-qq3">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="agm-eq-egs"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fne-Sh-xmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="346" y="-381"/>
+        </scene>
+        <!--Gregorian Calendar-->
+        <scene sceneID="uu4-Ha-aGr">
+            <objects>
+                <viewController id="XAC-MA-SKs" customClass="OldCalendarViewController" customModule="onECalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gc-tv-JIS">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LPd-op-3HM" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
+                                <rect key="frame" x="0.0" y="174" width="834" height="652"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="652" id="0wu-9l-G7P"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iM1-OW-SEf">
+                                    <size key="itemSize" width="190" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="2gh-aF-6Wo" customClass="CalendarCell" customModule="onECalendar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-qk-4Yz">
+                                                    <rect key="frame" x="74" y="59.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="tRh-qk-4Yz" firstAttribute="centerX" secondItem="2gh-aF-6Wo" secondAttribute="centerX" id="1NR-Gp-O0r"/>
+                                            <constraint firstItem="tRh-qk-4Yz" firstAttribute="centerY" secondItem="2gh-aF-6Wo" secondAttribute="centerY" id="gdu-PK-Mfu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="tRh-qk-4Yz" id="R4t-re-DND"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LPd-op-3HM" firstAttribute="top" secondItem="CAe-9R-pMi" secondAttribute="top" constant="150" id="M05-eh-JKs"/>
+                            <constraint firstItem="LPd-op-3HM" firstAttribute="leading" secondItem="CAe-9R-pMi" secondAttribute="leading" id="Zbx-98-zJa"/>
+                            <constraint firstItem="LPd-op-3HM" firstAttribute="trailing" secondItem="CAe-9R-pMi" secondAttribute="trailing" id="bRD-pv-bRW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CAe-9R-pMi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gregorian Calendar" id="T8J-bm-f91"/>
+                    <connections>
+                        <outlet property="calendarView" destination="LPd-op-3HM" id="O4n-qr-nAr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSy-Zu-W5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726" y="546"/>
+        </scene>
+        <!--EC-Calendar-->
+        <scene sceneID="xgs-kg-gvk">
+            <objects>
+                <viewController id="shs-uZ-uu5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sjh-bw-25x">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8sL-JA-krL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="EC-Calendar" id="8UN-n4-aOy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8i-8J-ECc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147" y="-18"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="SO0-1F-R6G">
+            <objects>
+                <viewController id="ici-ke-MuL" customClass="CalendarViewController" customModule="onECalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="OnC-jv-2ZQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RH-t5-rnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="1315"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="igf-z7-0Yf">
+            <objects>
+                <tabBarController id="DZA-Yy-EG2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UQf-pw-on6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="shs-uZ-uu5" kind="relationship" relationship="viewControllers" id="1qt-Wt-KHd"/>
+                        <segue destination="XAC-MA-SKs" kind="relationship" relationship="viewControllers" id="LnT-6W-Sgj"/>
+                        <segue destination="ici-ke-MuL" kind="relationship" relationship="viewControllers" id="5hk-sT-fgl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ckk-fu-Lb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="339"/>
         </scene>
     </scenes>
 </document>
