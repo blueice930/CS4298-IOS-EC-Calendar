@@ -158,18 +158,24 @@ class CalenderView: UIView, UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func getFirstWeekDay() -> Int {
-        let day = ("2019-03-01".date?.firstDayOfTheMonth)!
+        var day = 1
         switch currentMonthIndex {
         case 1,4,7,10:
-            var a = 1
+            day = 1
         case 2,8,11:
-            var b = 4
+            day = 4
+        case 5:
+            day = 3
+        case 3, 12:
+            day = 5
+        case 6, 9:
+            day = 6
         default:
-            var c = 121
+            day = 1
         }
         print(day)
         //return day == 7 ? 1 : day
-        return 3
+        return day
     }
     
     func didChangeMonth(monthIndex: Int, year: Int) {

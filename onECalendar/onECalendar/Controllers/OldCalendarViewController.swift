@@ -45,12 +45,14 @@ extension OldCalendarViewController: JTAppleCalendarViewDelegate ,JTAppleCalenda
     }
 
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        formatter.dateFormat = "MM dd, yyyy"
+        
+        formatter.dateFormat = "yyyy MM dd"
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
+        formatter.calendar.firstWeekday = 3
 
-        let s = formatter.date(from: "03 01, 2016")!
-        let e = formatter.date(from: "03 31, 2020")!
+        let s = formatter.date(from: "2019 03 01")!
+        let e = formatter.date(from: "2019 04 30")!
 
 
         let params = ConfigurationParameters(startDate: s, endDate: e)

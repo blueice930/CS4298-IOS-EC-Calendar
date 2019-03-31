@@ -1,0 +1,12 @@
+
+/* Class = "UITabBarItem"; title = "EC-Calendar"; ObjectID = "8UN-n4-aOy"; */
+"8UN-n4-aOy.title" = "EC-Calendar";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "OnC-jv-2ZQ"; */
+"OnC-jv-2ZQ.title" = "Settings";
+
+/* Class = "UITabBarItem"; title = "Gregorian Calendar"; ObjectID = "T8J-bm-f91"; */
+"T8J-bm-f91.title" = "Gregorian Calendar";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tRh-qk-4Yz"; */
+"tRh-qk-4Yz.text" = "Label";

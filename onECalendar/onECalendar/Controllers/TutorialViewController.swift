@@ -15,7 +15,7 @@ class TutorialViewController: UIViewController {
     let colors:[UIColor] = [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.8053434491, green: 0.3954387307, blue: 0.3358164728, alpha: 1),#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1),#colorLiteral(red: 0.4444106817, green: 0.7408292294, blue: 0.4954127669, alpha: 1)]
     var titleArray: [String] =
         [
-            "What is the EC-Calendar?",
+            "Welcome to onECalendar!",
             
             "What is the EC-Calendar?",
             
@@ -98,7 +98,7 @@ extension TutorialViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource
         view.title.font = UIFont(name: "futura-Bold", size: 36)
         view.title.textColor = UIColor.red
         view.subTitle.font = UIFont(name: "futura", size: 22)
-        view.subTitle.textAlignment = .left
+        view.subTitle.textAlignment = .center
         view.subTitle.numberOfLines = 20
         
         //Set the text in the page:
